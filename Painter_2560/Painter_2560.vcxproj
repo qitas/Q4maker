@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <ProjectName>Painter_2560</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\libraries\SPI\src;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\libraries\SPI\src\utility;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\libraries\Wire\src;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\libraries\Wire\src\utility;C:\Program Files (x86)\Arduino\libraries;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\libraries;C:\Users\汤棋\Documents\Arduino\libraries;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\cores\arduino;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.14\variants\mega;D:\arduino\Painter\Painter_2560;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino2/avr/include/;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino2//avr/include/avr/;C:\Users\汤棋\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino2/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\arduino\Painter\Painter_2560\__vm\.Painter_2560.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=106011;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painter_2560.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bed_qr_solve.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="bed_vector_3.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="boards.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="buzzer.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="cardreader.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="circularqueue.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Conditionals_post.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Configuration_adv.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="configuration_store.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="dac_mcp4728.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="dogm_bitmaps.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="dogm_font_data_Marlin_symbols.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="duration_t.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="endstops.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="enum.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="EXTRUDERS.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="fastio.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="language.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="language_cn.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="language_en.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="language_test.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Marlin.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="MarlinConfig.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="MarlinSerial.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="mesh_bed_leveling.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="nozzle.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="pins.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="pins_Painter.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="planner.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="planner_bezier.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="point_t.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="printcounter.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SanityCheck.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Sd2Card.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdBaseFile.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdFatConfig.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdFatStructs.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdFatUtil.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdFile.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdInfo.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SdVolume.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="servo.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="speed_lookuptable.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="stepper.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="stepper_dac.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="stepper_indirection.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="stopwatch.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="temperature.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="thermistornames.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="thermistortables.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="twibus.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="ultralcd.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="utf_mapper.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="watchdog.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="__vm\.Painter_2560.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bed_qr_solve.cpp" />
+    <ClCompile Include="bed_vector_3.cpp" />
+    <ClCompile Include="cardreader.cpp" />
+    <ClCompile Include="configuration_store.cpp" />
+    <ClCompile Include="dac_mcp4728.cpp" />
+    <ClCompile Include="digipot_mcp4451.cpp" />
+    <ClCompile Include="endstops.cpp" />
+    <ClCompile Include="M100_Free_Mem_Chk.cpp" />
+    <ClCompile Include="MarlinSerial.cpp" />
+    <ClCompile Include="Marlin_main.cpp" />
+    <ClCompile Include="mesh_bed_leveling.cpp" />
+    <ClCompile Include="planner.cpp" />
+    <ClCompile Include="planner_bezier.cpp" />
+    <ClCompile Include="printcounter.cpp" />
+    <ClCompile Include="Sd2Card.cpp" />
+    <ClCompile Include="SdBaseFile.cpp" />
+    <ClCompile Include="SdFatUtil.cpp" />
+    <ClCompile Include="SdFile.cpp" />
+    <ClCompile Include="SdVolume.cpp" />
+    <ClCompile Include="servo.cpp" />
+    <ClCompile Include="stepper.cpp" />
+    <ClCompile Include="stepper_dac.cpp" />
+    <ClCompile Include="stepper_indirection.cpp" />
+    <ClCompile Include="stopwatch.cpp" />
+    <ClCompile Include="temperature.cpp" />
+    <ClCompile Include="twibus.cpp" />
+    <ClCompile Include="ultralcd.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="watchdog.cpp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
