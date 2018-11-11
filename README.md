@@ -1,6 +1,6 @@
-﻿# Arduino 2560 printer
+﻿# [Q4maker](https://github.com/qitas/Q4maker) 
 
-[![sites](docs/Q.png)](http://www.qitas.cn)
+---
 
 ## 描述
 
@@ -9,7 +9,8 @@
 ## 组成
 
 
+---
 
-## 说明
+## 为锻造最美之器
 
-
+[![sites](qitas/qitas.png)](http://www.qitas.cn)
