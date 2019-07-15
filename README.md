@@ -1,16 +1,6 @@
 ﻿# [Q4maker](https://github.com/qitas/Q4maker) 
 
----
-
-## 描述
-
-基于marlin固件的4喷头打印机装置，2560作为主控芯片
-
-## 组成
-
-
----
-
-## 为锻造最美之器
+自定义3D打印机版本，包括arduino的4喷头装置和STM32升级版本
 
 [![sites](qitas/qitas.png)](http://www.qitas.cn)
+## 锻造最美之器
