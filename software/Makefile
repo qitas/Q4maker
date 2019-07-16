@@ -1,7 +1,7 @@
 all:
 	
 
-FHNW_PRO4E:
+STM32F103ZE:
 	mv ./Marlin/Configuration.h ./Marlin/Configuration.h.bak
 	mv ./Marlin/Configuration_adv.h ./Marlin/Configuration_adv.h.bak
 	cp ./config/examples/FHNW_PRO4E_TEAM8/Configuration.h ./Marlin/Configuration.h
