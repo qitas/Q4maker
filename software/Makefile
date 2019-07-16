@@ -18,6 +18,6 @@ FHNW_PRO4E:
 	cp ./config/examples/FHNW_PRO4E_TEAM8/_Statusscreen.h ./Marlin/_Statusscreen.h
 
 clean:
-	mv ./config/default/Configuration.h  ./Marlin/Configuration.h
-	mv ./config/default/Configuration_adv.h  ./Marlin/Configuration_adv.h
+	cp ./config/default/Configuration.h  ./Marlin/Configuration.h
+	cp ./config/default/Configuration_adv.h  ./Marlin/Configuration_adv.h
 	rm -f ./Marlin/_Bootscreen.h ./Marlin/_Statusscreen.h
