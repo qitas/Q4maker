@@ -1,21 +1,21 @@
 all:
 	
 
-STM32F103ZE:
+103ZE:
 	mv ./Marlin/Configuration.h ./Marlin/Configuration.h.bak
 	mv ./Marlin/Configuration_adv.h ./Marlin/Configuration_adv.h.bak
 	cp ./config/examples/FHNW_PRO4E/Configuration.h ./Marlin/Configuration.h
 	cp ./config/examples/FHNW_PRO4E/Configuration_adv.h ./Marlin/Configuration_adv.h
 	cp ./config/examples/FHNW_PRO4E/_Bootscreen.h ./Marlin/_Bootscreen.h
 	cp ./config/examples/FHNW_PRO4E/_Statusscreen.h ./Marlin/_Statusscreen.h
-STM32F103RE:
+
+103CB:
 	mv ./Marlin/Configuration.h ./Marlin/Configuration.h.bak
 	mv ./Marlin/Configuration_adv.h ./Marlin/Configuration_adv.h.bak
-	cp ./config/examples/FHNW_PRO4E_TEAM8/Configuration.h ./Marlin/Configuration.h
-	cp ./config/examples/FHNW_PRO4E_TEAM8/Configuration_adv.h ./Marlin/Configuration_adv.h
-	cp ./config/examples/FHNW_PRO4E_TEAM8/_Bootscreen.h ./Marlin/_Bootscreen.h
-	cp ./config/examples/FHNW_PRO4E_TEAM8/_Statusscreen.h ./Marlin/_Statusscreen.h
-STM32F407VE:
+	cp ./config/examples/Malyan/M200/Configuration.h ./Marlin/Configuration.h
+	cp ./config/examples/Malyan/M200/Configuration_adv.h ./Marlin/Configuration_adv.h
+
+407VE:
 	mv ./Marlin/Configuration.h ./Marlin/Configuration.h.bak
 	mv ./Marlin/Configuration_adv.h ./Marlin/Configuration_adv.h.bak
 	cp ./config/examples/FHNW_PRO4E_TEAM8/Configuration.h ./Marlin/Configuration.h
